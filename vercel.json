@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "buildCommand": "cd client && npm install --silent && npx vite build",
+  "outputDirectory": "client/dist",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index" }
+  ],
+  "functions": {
+    "api/index.js": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  }
+}

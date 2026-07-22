@@ -1,0 +1,22 @@
+{
+  "name": "Freefy - 免费音乐",
+  "short_name": "Freefy",
+  "description": "免费无广告音乐播放器，智能推荐引擎",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#7c5cfc",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["music", "entertainment"],
+  "lang": "zh-CN",
+  "scope": "/",
+  "prefer_related_applications": false
+}

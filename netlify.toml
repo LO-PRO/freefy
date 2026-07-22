@@ -1,0 +1,17 @@
+[build]
+  command = "cd client && npm install --silent && npx vite build"
+  publish = "client/dist"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@tensorflow/tfjs", "youtubei.js"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
